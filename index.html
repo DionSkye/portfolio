@@ -241,14 +241,140 @@
             color: #4b5563;
             letter-spacing: 1px;
         }
+        /* ==========================================================================
+   ABOUT SECTION STYLES
+   ========================================================================== */
+
+/* Utility container if your theme doesn't have one */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.about-section {
+  padding: 5rem 0;
+  background-color: #0a0a0c; /* Light neutral background - change to match your theme */
+  color: #333333;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* Desktop layout breakpoint */
+@media (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
+/* Profile Visual Box */
+.about-image-zone {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  background: #111111; /* Sleek dark card contrast */
+  color: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card h2 {
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.5px;
+}
+
+.profile-card .subtitle {
+  font-size: 0.95rem;
+  color: #aaaaaa;
+  margin: 0;
+}
+
+.profile-card .accent-line {
+  width: 40px;
+  height: 3px;
+  background-color: #0076ff; /* Accent color - adjust to match your theme */
+  margin: 1.5rem auto 0 auto;
+}
+
+/* Text & Content Layout */
+.about-text-zone {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  font-size: 1.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #0076ff;
+  margin: 0 0 1rem 0;
+}
+
+.bio-lead {
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 1.5rem 0;
+  color: #fafafa;
+}
+
+.bio-body {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0 0 1.25rem 0;
+  color: #c0bfbf;
+}
+
+/* Strategic Pillars Split */
+.pillars-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+@media (min-width: 480px) {
+  .pillars-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.pillar h4 {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+  color: #ffffff;
+}
+
+.pillar p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+  color: #c0bfbf;
+}
     </style>
 </head>
 <body>
 
     <!-- HERO SECTION -->
     <header>
-        <h1 class="glow-text">Dion Skye</h1>
-        <p>Driven by heavy riddims and late-night energy, blending Afrobeat and Dancehall into a sound that knows no boundaries.</p>
+        <h1 class="glow-text">Hi, I'm Dion Skye</h1>
+        <p>Artist blending Afrobeat and Dancehall, creating boundary-pushing music fueled by heavy riddims, raw creativity, and late-night energy.
+</p>
     </header>
 
     <div class="container">
@@ -259,23 +385,61 @@
             <div class="featured-grid">
                 <div class="featured-cover">
                     <!-- Replace with your 3000x3000px artwork -->
-                    <img src="https://i.audiomack.com/dion-skye/df281990f4.webp?width=416" alt="Featured Album Art">
+                    <img src="Goody Bag Artwork.png" alt="Featured Album Art">
                 </div>
                 <div class="featured-details">
-                    <h3>STEEZE</h3>
+                    <h3>GOODY BAG</h3>
                     <div class="featured-meta">AfroRiddim / Single</div>
-                    <p class="featured-desc">A bold fusion of heavy basslines and unfiltered confidence. Crafted for late nights and unmatched energy—nobody can touch the vibe.</p>
+                    <p class="featured-desc">This track is an absolute mood! 🎧✨ Whether you're looking for that perfect late-night vibe or a beat to get your energy up, this is it. The beat has this infectious, high-energy groove that hits from the very first second. It’s the ultimate mix of Afrobeats influence and modern pop polish—perfect for your "Summer 2026" playlist. Don't sleep on this one—put it on repeat! 🔥</p>
                     
                     <!-- Streaming Embed Placeholder -->
                     <div class="player-mock">
-                        [<iframe src="https://audiomack.com//embed/dion-skye/song/dion-skye-steeze" scrolling="no" width="100%" height="252" frameborder="0" title="DIon_Skye_Steeze"></iframe>]
+                        [<iframe src="https://audiomack.com//embed/dion-skye/song/goody-bag" scrolling="no" width="100%" height="252" frameborder="0" title="Goody bag"></iframe>]
                     </div>
                 </div>
             </div>
         </section>
 
     </div>
+<section id="about" class="about-section">
+  <div class="container">
+    
+    <div class="about-grid">
+      <div class="about-image-zone">
+        <div class="profile-card">
+          <h2>Dion Skye</h2>
+          <p class="subtitle">Artist & Creative Producer</p>
+          <div class="accent-line"></div>
+        </div>
+      </div>
 
+      <div class="about-text-zone">
+        <h3 class="section-title">About Me</h3>
+        <p class="bio-lead">
+          Operating at the intersection of high-impact business strategy and independent creative execution.
+        </p>
+        <p class="bio-body">
+          As a music producer and the driving force behind <strong>3eebyte Sounds</strong>, I manage full production and global distribution lifecycles across hip-hop, amapiano, and afrobeats. 
+        </p>
+        <p class="bio-body">
+          Parallel to my creative endeavors, I specialize in executive marketing and business development. My approach combines rigorous market analysis—honed through real estate strategy—with data-driven growth frameworks like Customer Lifetime Value (LTV) alignment to bridge the gap between creative vision and financial execution.
+        </p>
+        
+        <div class="pillars-grid">
+          <div class="pillar">
+            <h4>Creative Direction</h4>
+            <p>Studio production, project management, and global music distribution systems.</p>
+          </div>
+          <div class="pillar">
+            <h4>Growth Strategy</h4>
+            <p>Executive marketing, CRM optimization, and financial performance metrics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
     <!-- DISCOGRAPHY SHOWCASE -->
     <section class="discography">
     <div class="container">
@@ -309,7 +473,47 @@
                 </div>
             </div>
 
-                <!-- Project 3 -->
+                 <!-- Project 3 -->
+                <div class="grid-item" data-genre="afrobeat">
+                <img src="Craving Artwork.png" alt="Craving">
+                <div class="grid-overlay">
+                    <h4>Craving</h4>
+                    <p>Produced by 3eebyte Sounds</p>
+                    <span class="listen-btn" data-audio="https://audiomack.com//embed/dion-skye/song/craving" scrolling="no" width="100%" height="252" frameborder="0" title="Craving">Listen</span>
+                </div>
+            </div>
+
+                <!-- Project 4 -->
+                <div class="grid-item" data-genre="afrobeat">
+                <img src="Doubt_Artwork.png" alt="Craving">
+                <div class="grid-overlay">
+                    <h4>Doubt</h4>
+                    <p>Produced by 3eebyte Sounds</p>
+                    <span class="listen-btn" data-audio="https://audiomack.com//embed/dion-skye/song/doubt" scrolling="no" width="100%" height="252" frameborder="0" title="Doubt">Listen</span>
+                </div>
+            </div>
+
+                <!-- Project 5 -->
+                <div class="grid-item" data-genre="afrobeat">
+                <img src="Summer Baddie Artwork.png" alt="Summer Baddie">
+                <div class="grid-overlay">
+                    <h4>Summer Baddie</h4>
+                    <p>Produced by 3eebyte Sounds</p>
+                    <span class="listen-btn" data-audio="https://audiomack.com//embed/dion-skye/song/6a18c61d393bc" scrolling="no" width="100%" height="252" frameborder="0" title="Summer_Baddie">Listen</span>
+                </div>
+            </div>
+
+                <!-- Project 6 -->
+                <div class="grid-item" data-genre="afrobeat">
+                <img src="Steeze Artwork.png" alt="Steeze">
+                <div class="grid-overlay">
+                    <h4>Steeze</h4>
+                    <p>Produced by 3eebyte Sounds</p>
+                    <span class="listen-btn" data-audio="https://audiomack.com//embed/dion-skye/song/dion-skye-steeze" scrolling="no" width="100%" height="252" frameborder="0" title="DIon_Skye_Steeze">Listen</span>
+                </div>
+            </div>
+
+                <!-- Project 7 -->
                 <div class="grid-item" data-genre="trap">
                 <img src="https://i.audiomack.com/reeda_hunned/10019132-7.webp?size=240&width=480&height=480&max=true" alt="In My Shoe Cover">
                 <div class="grid-overlay">
@@ -408,6 +612,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
 </script>
 
 </body>
